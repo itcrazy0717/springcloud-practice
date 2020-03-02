@@ -12,7 +12,7 @@ import com.springcloud.domain.Dept;
 /**
  * @author: dengxin.chen
  * @date: 2020-02-21 16:10
- * @description:
+ * @description: 由于使用了feign，因此这里其实可以提到api中去，通过eureka进行访问
  */
 @FeignClient(value = "SPRINGCLOUD-DEPT", fallbackFactory = DeptServiceFallback.class)
 public interface FeignServiceClient {
